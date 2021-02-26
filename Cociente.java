@@ -34,9 +34,11 @@ public class Cociente {
 	 * @exception ArithmeticException Si num2 = 0
 	 */
 
-	public double cocienteReales(double num1, double num2) {
+	public double cocienteReales(double num1, double num2) throws ArithmeticException {
 
-		return 0;
+		double resultado = num1 / num2;
+
+		return resultado;
 	}
 
 	/**
@@ -63,7 +65,7 @@ public class Cociente {
 	 * @return Devuelve el resultado de dividir num1 entre num2
 	 * @exception ArithmeticException Si num2 = 0
 	 */
-	public double cocienteEnteros(int num1, int num2) {
+	public double cocienteEnteros(int num1, int num2) throws ArithmeticException {
 
 		return 0;
 	}
@@ -86,7 +88,8 @@ public class Cociente {
 	 * @exception ArithmeticException si num1 = 0
 	 */
 
-	public double calculaInverso(double num1) {
+	public double calculaInverso(double num1) throws ArithmeticException {
+
 		return 0;
 	}
 
@@ -107,7 +110,8 @@ public class Cociente {
 	 * @param num1 Radicando
 	 * @return Devuelve un real que es la raiz cuadrada positiva de num1
 	 */
-	public double calculaRaiz(double num1) {
+	public double calculaRaiz(double num1) throws ArithmeticException {
+
 		return 0;
 	}
 
