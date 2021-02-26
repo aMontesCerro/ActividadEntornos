@@ -66,8 +66,8 @@ public class Cociente {
 	 * @exception ArithmeticException Si num2 = 0
 	 */
 	public double cocienteEnteros(int num1, int num2) throws ArithmeticException {
-
-		return 0;
+		double resultado = num1 / num2;
+		return resultado;
 	}
 
 	/**
