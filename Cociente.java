@@ -89,8 +89,8 @@ public class Cociente {
 	 */
 
 	public double calculaInverso(double num1) throws ArithmeticException {
-
-		return 0;
+		double resultado = 1 / num1;
+		return resultado;
 	}
 
 	/**
