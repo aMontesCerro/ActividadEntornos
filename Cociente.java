@@ -111,8 +111,9 @@ public class Cociente {
 	 * @return Devuelve un real que es la raiz cuadrada positiva de num1
 	 */
 	public double calculaRaiz(double num1) throws ArithmeticException {
+		double resultado = Math.sqrt(num1);
 
-		return 0;
+		return resultado;
 	}
 
 }
