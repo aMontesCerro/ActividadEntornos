@@ -1,3 +1,4 @@
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 
 public class Main {
 
@@ -11,6 +12,9 @@ public class Main {
 		
 		Cociente cociente = new Cociente();
 		System.out.println(cociente.cocienteReales(num1, num2));
+		
+		System.out.println(cociente.calculaInverso(num1));
+		System.out.println(cociente.calculaRaiz(num2));
 	}
 
 }
