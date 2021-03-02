@@ -15,6 +15,14 @@ public class Main {
 		
 		System.out.println(cociente.calculaInverso(num1));
 		System.out.println(cociente.calculaRaiz(num2));
+		
+		//Prueba clase resta
+		resta res = new resta();
+		int nume1 = 25;
+		int nume2 = 5;
+		
+		System.out.println(res.restaReales(num1, num2));
+		System.out.println(res.restaEnteris(nume1, nume2));
 	}
 
 }
