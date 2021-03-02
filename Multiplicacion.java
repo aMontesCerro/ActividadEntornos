@@ -44,7 +44,7 @@ public class Multiplicacion {
 	 * @param num2 Es el segudno numero entero con el que se opera
 	 * @return devuelve el resultado de multiplicar el numero 1 tantas veces por si mismo como indica
 	 * el numero dos
-	 *
+	 * @exception cuidado al introducir números grandes, te da error, diciendo que no reconoce la fuente
 	 */
 	public int potencia (int num1, int num2) {
 		return num1 ^ num2;
