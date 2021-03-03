@@ -39,6 +39,10 @@ public class Cociente {
 	public double cocienteReales(double num1, double num2) {
 		if (num2 == 0) {
 			return Double.NaN;
+		}else if (num2 == Double.NEGATIVE_INFINITY && num1== Double.NEGATIVE_INFINITY) {
+			return Double.NaN;
+		}else if(num2 == Double.NEGATIVE_INFINITY) {
+			return Double.NEGATIVE_INFINITY;
 		}
 		return resultado = num1 / num2;
 	}
@@ -53,13 +57,6 @@ public class Cociente {
 	 * <li>Si el divisor introducido es un 0 devuelve NaN
 	 * <li>Si el divisor es 1 el resultado será el primer número
 	 * <li>Si el dividendo es 0, el resultado será 0
-	 * <li>Si el dividendo es infinito, devuelve infinito
-	 * <li>Si el divisor es infinito, devuelve 0
-	 * <li>Si ambos números son infinito, devuelve NaN
-	 * <li>Si el dividendo es infinito negativo, devuelve infinito negativo
-	 * <li>Si el divisor es infinito negativo, el resultado es infinito negativo
-	 * <li>Si ambos números son infinito negativo, devuelve NaN
-	 * <li>Si alguno de los números es NaN, el resultado será NaN
 	 * </ul>
 	 * 
 	 * @param num1 Dividendo del cociente
@@ -95,6 +92,8 @@ public class Cociente {
 	public double calculaInverso(double num1) throws ArithmeticException {
 		if (num1 == 0) {
 			return Double.NaN;
+		}else if ( num1== Double.NEGATIVE_INFINITY) {
+			return 0;
 		}
 		return resultado = 1 / num1;
 	}
