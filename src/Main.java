@@ -23,6 +23,17 @@ public class Main {
 		
 		System.out.println(res.restaReales(num1, num2));
 		System.out.println(res.restaEnteris(nume1, nume2));
+		
+		//Prueba clase multiplicacion
+		double num3 = 15;
+		Multiplicacion mul = new Multiplicacion ();
+		
+		System.out.println("Resultados clases multiplicacion: ");
+		System.out.println(mul.multientero(nume1, nume2));
+		System.out.println(mul.multireal(num1, num2));
+		System.out.println(mul.multi3reales(num1,num2,num3));
+		System.out.println(mul.potencia(nume1, nume2));
+			
 	}
 
 }
