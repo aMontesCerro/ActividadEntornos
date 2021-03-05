@@ -42,11 +42,18 @@ public class Multiplicacion {
 	 * Hace la potencia de dos numeros (x^y) y devuelve el resultado
 	 * @param num1 Es el primer numero entero con el que se opera
 	 * @param num2 Es el segudno numero entero con el que se opera
-	 * @return devuelve el resultado de multiplicar el numero 1 tantas veces por si mismo como indica
-	 * el numero dos
-	 *
+	 * @return devuelve el resultado de multiplicar el numero 1 tantas veces por si mismo como indica el numero dos
+	 * @exception cuidado al introducir números grandes, te da error
 	 */
 	public int potencia (int num1, int num2) {
-		return (int) Math.pow(num1, num2);		
+
+			int x = (int)  Math.pow(num1, num2);
+			double y = Double.MAX_VALUE;
+				if	(x >= y) {
+					return (int) Double.NaN;
+				}
+				else {
+					return x;	
+				}
 	}
 }
