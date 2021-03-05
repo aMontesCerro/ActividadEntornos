@@ -315,6 +315,18 @@ class MultiplicacionUT {
 		assertEquals(esperado, obtenido, "El resultado de algo elevado a 0 debe ser 1");
 	}
 	
+	@Test
+	public void potenciaExponenteNegativo() {
+		//Arrange
+		int num1 = 2;
+		int num2 = -2;
+		int esperado = 1/4;
+		//Act
+		int obtenido = cut.potencia(num1, num2);
+		//Assert
+		assertEquals(esperado, obtenido, "2 elevado a -2 debe ser 0.25");
+	}
+	
 	
 	
 	
